@@ -1,16 +1,19 @@
 # loafly
 
-A new Flutter project.
+Loaf.ly is a libyan mobile app developed using flutter and firebse which is made to 
+let libyans whom are eiter unable or don't have enough time to go and get fresh hot bread 
+in order to enjoy the delicous libyan foods or people whom only want a specific type of bread 
+which cannot be found in any regular bakery can just download this app and are able to the following 
 
-## Getting Started
+* Subscribe to any pre made bread package and can select the days and time they want to receive this package right to their door
+* get istant delivey on any type of bread 
+* create their own package and customize it as much as they want 
+* deliver to someone else anywhere in Tripoli 
 
-This project is a starting point for a Flutter application.
+# Goals of this app 
+* offer easy and fast way to get the freshest, best bread of YOUR choosing anytime and anywhere you want 
+* Making signing up and signing in easier for users since the target audience is not usually the youngsters 
+* offer multiple ways of pay and discounts 
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Layout 
+This app is developed using flutter and mvvm pattern as well as firebase backend and getX state management 
