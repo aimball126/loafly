@@ -40,3 +40,37 @@ class CustomTextBox extends StatelessWidget {
     );
   }
 }
+
+class CustomAdvancedText extends StatelessWidget {
+  const CustomAdvancedText({super.key, required this.smallText, required this.bigText});
+  final String smallText;
+  final String bigText;
+  @override
+  Widget build(BuildContext context) {
+    return RichText(
+      textAlign:TextAlign.end,
+      text: TextSpan(
+        children: [
+          TextSpan(
+            text: smallText,
+            style: TextStyle(
+              fontSize: 16,
+              color: Colors.black,
+            ),
+          ),
+          TextSpan(
+            text: ' ', // Add a space between the two texts
+          ),
+          TextSpan(
+            text: bigText,
+            style: TextStyle(
+              fontSize: 22,
+              fontWeight: FontWeight.bold,
+              color:primary, // Use theme color for big text
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}

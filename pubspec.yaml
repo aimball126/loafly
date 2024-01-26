@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   badges: ^2.0.2
   google_fonts: ^6.1.0
+  get:
   font_awesome_flutter: ^9.2.0
 dev_dependencies:
   flutter_test:
@@ -55,7 +56,7 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
   assets:
-    - assets/images/welcome.jpg
+    - assets/images/
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
