@@ -1,0 +1,85 @@
+
+{
+  "users": {
+    "user1": {
+      "userId": "1",
+      "name": "اسم المستخدم",
+      "email": "user1@example.com",
+      "phoneNumber": "123456789",
+      "password": "****",
+      "address": "عنوان المنزل"
+    },
+    "user2": {
+      "userId": "2",
+      "name": "اسم المستخدم",
+      "email": "user2@example.com",
+      "phoneNumber": "987654321",
+      "password": "****",
+      "address": "عنوان المنزل"
+    }
+  }
+}
+
+
+{
+  "breadPackages": {
+    "package1": {
+      "packageId": "1",
+      "breadTypes": ["نوع الخبز 1", "نوع الخبز 2"],
+      "quantity": 5,
+      "subscriptionDate": "2024-01-21",
+      "deliveryDate": "2024-01-28",
+      "status": "تم التسليم",
+      "paymentDetails": "تفاصيل الدفع"
+    },
+    "package2": {
+      "packageId": "2",
+      "breadTypes": ["نوع الخبز 2", "نوع الخبز 3"],
+      "quantity": 3,
+      "subscriptionDate": "2024-01-19",
+      "deliveryDate": "2024-01-25",
+      "status": "قيد التوصيل",
+      "paymentDetails": "تفاصيل الدفع"
+    }
+  }
+}
+
+
+{
+  "deliveryOrders": {
+    "order1": {
+      "orderId": "1",
+      "orderDetails": "تفاصيل الطلب",
+      "orderDate": "2024-01-20",
+      "expectedDeliveryDate": "2024-01-22",
+      "orderStatus": "قيد التوصيل"
+    },
+    "order2": {
+      "orderId": "2",
+      "orderDetails": "تفاصيل الطلب",
+      "orderDate": "2024-01-18",
+      "expectedDeliveryDate": "2024-01-24",
+      "orderStatus": "تم التوصيل"
+    }
+  }
+}
+
+
+{
+  "payments": {
+    "payment1": {
+      "paymentId": "1",
+      "paymentMethod": "طريقة الدفع",
+      "amount": 100.0,
+      "paymentDate": "2024-01-21",
+      "paymentDetails": "تفاصيل الدفع"
+    },
+    "payment2": {
+      "paymentId": "2",
+      "paymentMethod": "طريقة الدفع",
+      "amount": 50.0,
+      "paymentDate": "2024-01-20",
+      "paymentDetails": "تفاصيل الدفع"
+    }
+  }
+}
