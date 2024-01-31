@@ -4,6 +4,9 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:loafly/screens/auth/singup/using_phone.dart';
 import 'package:loafly/screens/auth/welcome_screen.dart';
 
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
 import 'constants/colors.dart';
 
 Future<void> main() async {
