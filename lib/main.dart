@@ -6,14 +6,21 @@ import 'package:loafly/screens/auth/welcome_screen.dart';
 
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'firebase_options.dart';
 
 import 'constants/colors.dart';
 
 Future<void> main() async {
+
+  await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   WidgetsFlutterBinding.ensureInitialized();
   await Get.putAsync(() => Future.value(MyApp()));
   runApp(GetMaterialApp(home: MyApp()));
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
