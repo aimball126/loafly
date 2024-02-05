@@ -4,7 +4,7 @@ import '../constants/colors.dart';
 import '../widgets/bottom_bar_item.dart';
 import 'home/home_screen.dart';
 
-
+//فئة StatefulWidget RootApp تدير حالة شريط القوائم السفلي
 class RootApp extends StatefulWidget {
   const RootApp({Key? key}) : super(key: key);
 
@@ -12,8 +12,14 @@ class RootApp extends StatefulWidget {
   _RootAppState createState() => _RootAppState();
 }
 
+//فئة الدولة الخاصة لـ RootApp
 class _RootAppState extends State<RootApp> {
+
+//فهرس علامة التبويب النشطة لتتبع علامة التبويب المحددة
+
   int _activeTab = 0;
+
+  //قائمة الرموز لكل علامة تبويب في شريط التنقل السفلي
 
   final List<IconData> _tapIcons = [
     Icons.home_rounded,
@@ -21,6 +27,8 @@ class _RootAppState extends State<RootApp> {
     Icons.shopping_cart_rounded,
     Icons.person_rounded
   ];
+
+  //قائمة الصفحات المقابلة لكل علامة تبويب في شريط التنقل السفلي
 
   final List<Widget> _pages = [
     const HomePage(),
@@ -31,6 +39,9 @@ class _RootAppState extends State<RootApp> {
 
   @override
   Widget build(BuildContext context) {
+
+//يوفر Scaffold هيكل التطبيق بشريط تنقل سفلي
+
     return Scaffold(
       backgroundColor: appBgColor,
       bottomNavigationBar: _buildBottomBar(),
@@ -38,6 +49,7 @@ class _RootAppState extends State<RootApp> {
     );
   }
 
+//طريقة بناء شريط التنقل السفلي
   Widget _buildBottomBar() {
     return Container(
       height: 75,
@@ -78,12 +90,14 @@ class _RootAppState extends State<RootApp> {
     );
   }
 
+
+//طريقة إنشاء الصفحة لعلامة التبويب المحددة
   Widget _buildBarPage() {
     return IndexedStack(
-      index: _activeTab,
+      index: _activeTab, //فهرس الصفحة النشطة
       children: List.generate(
         _tapIcons.length,
-            (index) => _pages[index],
+            (index) => _pages[index], //صفحات لكل علامة تبويب
       ),
     );
   }
