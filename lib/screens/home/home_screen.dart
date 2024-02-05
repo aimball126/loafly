@@ -1,5 +1,9 @@
+//استيراد الحزم والمكتبات المطلوبة في بداية الملف
+
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+// Importing constants and utility/widget files
 
 import '../../constants/colors.dart';
 import '../../utils/dummy_data.dart';
@@ -9,6 +13,7 @@ import '../../widgets/feature_item.dart';
 import '../../widgets/notification_box.dart';
 import '../../widgets/popular_item.dart';
 
+// في الصفحة الرئيسية  يتم للتعامل مع المحتوى الديناميكي الذي قد يتغير بمرور الوقت 
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -17,20 +22,27 @@ class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
 
+//فئة الدولة الخاصة للصفحة الرئيسية
+
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+
+// Scaffold يوفر هيكل الصفحة الرئيسية
+
     return Scaffold(
-      backgroundColor: Colors.transparent,
-      appBar: _buildAppBar(),
-      body: _buildBody(),
+      backgroundColor: Colors.transparent, //خلفية شفافة Scaffold
+      appBar: _buildAppBar(), // AppBar إنشاء بطريقة مخصصة
+      body: _buildBody(), //بناء نص الصفحة الرئيسية بطريقة مخصصة
     );
   }
 
+//طريقة إنشاء AppBar بتصميم مخصص
+
   AppBar _buildAppBar() {
     return AppBar(
-      backgroundColor: Colors.transparent,
-      elevation: 0,
+      backgroundColor: Colors.transparent, //خلفية AppBar شفافة
+      elevation: 0, //لا يوجد ظل لـ AppBar
       title: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -46,14 +58,17 @@ class _HomePageState extends State<HomePage> {
           ),
           const NotificationBox(
             number: 1,
+            //إظهار صندوق الإشعارات مع العد
           )
         ],
       ),
     );
   }
 
+  //طريقة بناء نص الصفحة الرئيسية
+
   _buildBody() {
-    return SingleChildScrollView(
+    return SingleChildScrollView( //يسمح للجسم بالتمرير
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -129,11 +144,12 @@ class _HomePageState extends State<HomePage> {
           const SizedBox(
             height: 20,
           ),
-        ],
+        ], //يتم استخدام حشوة إضافية وصناديق بحجم للتباعد
       ),
     );
   }
 
+//طريقة بناء شريط البحث
   _buildSearch() {
     return const Padding(
       padding: EdgeInsets.only(left: 15, right: 15),
@@ -148,6 +164,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+//طريقة بناء قسم صور الإعلانات
   _buildAdsImage() {
     return Container(
       margin: const EdgeInsets.only(left: 15, right: 15),
@@ -165,12 +182,13 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+//طريقة بناء قسم فئات التمرير الأفقي
   _buildCategories() {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       padding: const EdgeInsets.only(bottom: 5, left: 15),
-      child: Row(
-        children: [
+      child: Row( 
+        children: [ //فئة "الكل" الثابتة والفئات الديناميكية من البيانات الوهمية
           const CategoryItem(
             data: {
               "name": "All",
@@ -187,12 +205,14 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+
+//طريقة إنشاء قسم العناصر الشائعة بالتمرير الأفقي
   _buildPopulars() {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       padding: const EdgeInsets.only(left: 15),
       child: Row(
-        children: List.generate(
+        children: List.generate( //العناصر الشعبية الديناميكية من البيانات الوهمية
           populars.length,
               (index) => PopularItem(
             data: populars[index],
@@ -202,9 +222,12 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+
+//طريقة بناء قسم العناصر المميزة
+
   _buildFeatured() {
     return Column(
-      children: List.generate(
+      children: List.generate( //العناصر المميزة الديناميكية من البيانات الوهمية
         featured.length,
             (index) => FeaturedItem(data: featured[index]),
       ),
