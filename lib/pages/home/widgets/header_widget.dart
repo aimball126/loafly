@@ -76,9 +76,9 @@ class Header extends StatelessWidget {
                 InkWell(
                   onTap: () => scaffoldKey.currentState!.openEndDrawer(),
                   child: CircleAvatar(
-                    backgroundColor: Colors.transparent,
+                    backgroundColor: Color.fromARGB(255, 255, 255, 255),
                     child: Image.asset(
-                      "assets/images/avatar.jpg",
+                      "assets/images/avatar.png",
                       width: 32,
                     ),
                   ),
