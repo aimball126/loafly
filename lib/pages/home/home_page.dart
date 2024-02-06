@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dashboard/pages/home/widgets/header_widget.dart';
 import 'package:flutter_dashboard/responsive.dart';
 import 'package:flutter_dashboard/pages/home/widgets/activity_details_card.dart';
-import 'package:flutter_dashboard/pages/home/widgets/bar_graph_card.dart';
 
 class HomePage extends StatelessWidget {
   final GlobalKey<ScaffoldState> scaffoldKey;
@@ -31,7 +30,6 @@ class HomePage extends StatelessWidget {
               const ActivityDetailsCard(),
               _height(context),
               _height(context),
-              BarGraphCard(),
               _height(context),
             ],
           ),
