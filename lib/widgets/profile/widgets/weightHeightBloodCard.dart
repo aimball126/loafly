@@ -15,7 +15,7 @@ class WeightHeightBloodCard extends StatelessWidget {
         children: [
           details("Name", "Ayoub"),
           details("home address", "Janzour"),
-          details("phone", "0915005994"),
+          details("phone", "0914274729"),
         ],
       ),
     );
