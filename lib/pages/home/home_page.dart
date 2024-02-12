@@ -30,7 +30,10 @@ class HomePage extends StatelessWidget {
               const ActivityDetailsCard(),
               _height(context),
               _height(context),
+              const ActivityDetailsCard2(),
               _height(context),
+              _height(context),
+              const ActivityDetailsCard3(),
             ],
           ),
         )));
