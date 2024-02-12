@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dashboard/Responsive.dart';
-import 'package:flutter_dashboard/model/menu_modal.dart';
 import 'package:flutter_svg/svg.dart';
+
+class MenuModel {
+  String icon;
+  String title;
+  MenuModel({required this.icon, required this.title});
+}
 
 class Menu extends StatefulWidget {
   final GlobalKey<ScaffoldState> scaffoldKey;
