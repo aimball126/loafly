@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dashboard/responsive.dart';
 import 'package:flutter_dashboard/const.dart';
-import 'package:flutter_dashboard/widgets/profile/widgets/weightHeightBloodCard.dart';
+import 'package:flutter_dashboard/widgets/profile/widgets/weightHeightCard.dart';
 
 class Profile extends StatelessWidget {
   const Profile({Key? key}) : super(key: key);
@@ -44,7 +44,7 @@ class Profile extends StatelessWidget {
               Padding(
                 padding:
                     EdgeInsets.all(Responsive.isMobile(context) ? 15 : 20.0),
-                child: const WeightHeightBloodCard(),
+                child: const WeightHeightCard(),
               ),
               SizedBox(
                 height: Responsive.isMobile(context) ? 20 : 40,
