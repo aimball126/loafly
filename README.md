@@ -17,6 +17,6 @@ which cannot be found in any regular bakery can just download this app and are a
 
 # Layout 
 This app is developed using flutter and mvvm pattern as well as firebase backend and getX state management 
-![Home Screen](https://github.com/aimball126/loafly/assets/62388716/85583cc1-7fa5-45c7-b05e-d2e843989490)
-![Side Menu](https://github.com/aimball126/loafly/assets/62388716/6dc8b7e6-320e-4407-91a2-8f023d3371af)
+![Dashboard Computer](https://raw.githubusercontent.com/aimball126/loafly/Database/assets/images/Screenshot%202024-02-15%20011903.png)
+![Dashboard Mobile](https://raw.githubusercontent.com/aimball126/loafly/Database/assets/images/Screenshot%202024-02-15%20011929.png)
 ![Uploading Welcome.jpg…]()
