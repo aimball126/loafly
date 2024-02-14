@@ -20,3 +20,5 @@ This app is developed using flutter and mvvm pattern as well as firebase backend
 
 ![Home Screen](https://github.com/aimball126/loafly/assets/62388716/85583cc1-7fa5-45c7-b05e-d2e843989490)
 ![Side Menu](https://github.com/aimball126/loafly/assets/62388716/6dc8b7e6-320e-4407-91a2-8f023d3371af)
+
+![Uploading Welcome.jpg…]()
