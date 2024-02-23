@@ -44,38 +44,38 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCFsikNTnXlyRNZ9DQk3Di-Q4c3y_wQEUg',
-    appId: '1:247513053402:web:2be9f4225cb84d385d4de3',
-    messagingSenderId: '247513053402',
-    projectId: 'ultra-unfolding-412521',
-    authDomain: 'ultra-unfolding-412521.firebaseapp.com',
-    storageBucket: 'ultra-unfolding-412521.appspot.com',
-    measurementId: 'G-H11EJ7ZGF6',
+    apiKey: 'AIzaSyAilqurbm9GnK5SWfYy40a-Jl7Zoubx2bY',
+    appId: '1:93394752698:web:0fe2732998b5f7604d1e83',
+    messagingSenderId: '93394752698',
+    projectId: 'dashboard-4c650',
+    authDomain: 'dashboard-4c650.firebaseapp.com',
+    storageBucket: 'dashboard-4c650.appspot.com',
+    measurementId: 'G-THY6SYWW8F',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAk6BXV0hw7Y2lnYIe48ptAFO61A80scMA',
-    appId: '1:247513053402:android:74fe33f2bcb7f1355d4de3',
-    messagingSenderId: '247513053402',
-    projectId: 'ultra-unfolding-412521',
-    storageBucket: 'ultra-unfolding-412521.appspot.com',
+    apiKey: 'AIzaSyDOvvEW5eCtPygowyzri440Pw2kpP5OvR8',
+    appId: '1:93394752698:android:1b56b1cbb49071304d1e83',
+    messagingSenderId: '93394752698',
+    projectId: 'dashboard-4c650',
+    storageBucket: 'dashboard-4c650.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDQaTvmMZAztsyjfizndCQ9diIjHtYLlx8',
-    appId: '1:247513053402:ios:63bd79fe8b5bb3ac5d4de3',
-    messagingSenderId: '247513053402',
-    projectId: 'ultra-unfolding-412521',
-    storageBucket: 'ultra-unfolding-412521.appspot.com',
-    iosBundleId: 'com.example.loafly',
+    apiKey: 'AIzaSyDqyBuAhKkx59gI0DthNCCNlGrNzWQDjCI',
+    appId: '1:93394752698:ios:18c784616578067d4d1e83',
+    messagingSenderId: '93394752698',
+    projectId: 'dashboard-4c650',
+    storageBucket: 'dashboard-4c650.appspot.com',
+    iosBundleId: 'com.dashboard.flutter.app.flutterDashboard',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDQaTvmMZAztsyjfizndCQ9diIjHtYLlx8',
-    appId: '1:247513053402:ios:09efe5160a84f3ea5d4de3',
-    messagingSenderId: '247513053402',
-    projectId: 'ultra-unfolding-412521',
-    storageBucket: 'ultra-unfolding-412521.appspot.com',
-    iosBundleId: 'com.example.loafly.RunnerTests',
+    apiKey: 'AIzaSyDqyBuAhKkx59gI0DthNCCNlGrNzWQDjCI',
+    appId: '1:93394752698:ios:18c784616578067d4d1e83',
+    messagingSenderId: '93394752698',
+    projectId: 'dashboard-4c650',
+    storageBucket: 'dashboard-4c650.appspot.com',
+    iosBundleId: 'com.dashboard.flutter.app.flutterDashboard',
   );
 }
