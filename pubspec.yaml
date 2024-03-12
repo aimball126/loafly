@@ -9,7 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  firebase_core: ^2.25.4
+  firebase_core: ^2.27.0
   firebase_auth: ^4.15.3
   cloud_firestore: ^4.15.4
   cloud_firestore_web: ^3.10.4
@@ -17,6 +17,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_svg: ^0.22.0
   fl_chart: ^0.62.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+
 
 dev_dependencies:
   flutter_test:
